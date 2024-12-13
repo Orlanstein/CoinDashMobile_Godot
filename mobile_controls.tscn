@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://f2tqjd8v62su"]
+
+[ext_resource type="Texture2D" uid="uid://cvn7b7pu8do3" path="res://assets/arrows/Up Square Button.png" id="1_54lrs"]
+[ext_resource type="Texture2D" uid="uid://lgqty8ia7tc8" path="res://assets/arrows/Up col_Square Button.png" id="2_o0ww2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jo4dl"]
+size = Vector2(200, 200)
+
+[node name="MobileControls" type="Node2D"]
+texture_filter = 1
+
+[node name="B_Up" type="TouchScreenButton" parent="."]
+position = Vector2(-54, -109)
+scale = Vector2(0.53, 0.53)
+texture_normal = ExtResource("1_54lrs")
+texture_pressed = ExtResource("2_o0ww2")
+shape = SubResource("RectangleShape2D_jo4dl")
+
+[node name="B_Down" type="TouchScreenButton" parent="."]
+position = Vector2(51, 101)
+rotation = 3.14159
+scale = Vector2(0.53, 0.53)
+texture_normal = ExtResource("1_54lrs")
+texture_pressed = ExtResource("2_o0ww2")
+shape = SubResource("RectangleShape2D_jo4dl")
+
+[node name="B_Right" type="TouchScreenButton" parent="."]
+position = Vector2(156, -4)
+rotation = 1.5708
+scale = Vector2(0.53, 0.53)
+texture_normal = ExtResource("1_54lrs")
+texture_pressed = ExtResource("2_o0ww2")
+shape = SubResource("RectangleShape2D_jo4dl")
+
+[node name="B_Left" type="TouchScreenButton" parent="."]
+position = Vector2(-159, 101)
+rotation = 4.71239
+scale = Vector2(0.53, 0.53)
+texture_normal = ExtResource("1_54lrs")
+texture_pressed = ExtResource("2_o0ww2")
+shape = SubResource("RectangleShape2D_jo4dl")
